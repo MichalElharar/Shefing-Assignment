@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.users-list-section {
+    min-width: 50%;
+    color: #c2185b;
+}
+
+.user-posts-section, .users-list-section {
+    max-width: 50%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.user-posts-section {
+    width: 40%;
+}
+
+.mat-mdc-header-cell {
+    color: var(--color-primary);
+}
+.mat-mdc-row .mat-mdc-cell {
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #c2185b;
+}
+
+.mat-mdc-row:hover .mat-mdc-cell {
+    border-color: currentColor;
+}
+
+.mat-mdc-form-field {
+    width: 100%;
+}
+
+.mat-cell {
+    padding: 15px;
+    color: rgba(255, 255, 255, 0.7);
+}

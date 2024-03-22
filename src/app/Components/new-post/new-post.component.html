@@ -1,0 +1,22 @@
+<h2 mat-dialog-title>Add New Post</h2>
+<mat-dialog-content>
+    <p>What's your say?</p>
+    <mat-form-field>
+        <mat-label>Title</mat-label>
+        <input matInput [(ngModel)]="data.title" #title="ngModel" required>
+        @if (title.errors?.['required']) {
+        <mat-error>Title is <strong>required</strong></mat-error>
+        }
+    </mat-form-field><br>
+    <mat-form-field>
+        <mat-label>Body</mat-label>
+        <textarea matInput [(ngModel)]="data.body" #body="ngModel" required></textarea>
+        @if (body.errors?.['required']) {
+        <mat-error>Body is <strong>required</strong></mat-error>
+        }
+    </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions>
+    <button mat-button (click)="onNoClick()">Cancel</button>
+    <button mat-button [mat-dialog-close]="data" [disabled]="!title.valid || !body.valid">Ok</button>
+</mat-dialog-actions>

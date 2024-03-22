@@ -1,0 +1,25 @@
+.posts-header {
+    display: flex;
+    align-items: center;
+    color: #c2185b;
+    justify-content: space-between;
+    padding: 10px;
+    max-width: 450px;
+    box-sizing: border-box;
+}
+
+.card {
+    max-width: 450px;
+    margin-bottom: 10px;
+    border: 2px solid #c2185b;
+}
+
+.mat-mdc-card-title {
+    color: white;
+    font-size: 16px;
+}
+
+.mat-mdc-card-content {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+}
